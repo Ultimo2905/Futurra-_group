@@ -46,7 +46,8 @@
  for (let anchor of anchors) {
      anchor.addEventListener('click', function(e) {
          e.preventDefault()
-
+         menu.classList.toggle('active');
+         body.classList.toggle('body-hide');
          const blockID = anchor.getAttribute('href')
 
          document.querySelector(blockID).scrollIntoView({
